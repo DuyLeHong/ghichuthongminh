@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:quick_task_flutter/screens/task_list_screen.dart'; // Assuming you will create this
 
-void main() {
+void main() { // sua code 9-5-2025
   runApp(
     const ProviderScope(
       child: MyApp(),

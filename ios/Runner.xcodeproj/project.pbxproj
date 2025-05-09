@@ -1,0 +1,273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24A5F13E25D57D8200D2A2A3 /* Runner_Sources */ = {isa = PBXBuildFile; fileRef = 24A5F13D25D57D8200D2A2A3 /* AppDelegate.swift */; };
+		24A5F14B25D57D8200D2A2A3 /* Runner_Frameworks */ = {isa = PBXBuildFile; fileRef = 24A5F14A25D57D8200D2A2A3 /* App.framework */; };
+		24A5F14C25D57D8200D2A2A3 /* Runner_Frameworks */ = {isa = PBXBuildFile; fileRef = 24A5F14925D57D8200D2A2A3 /* Flutter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24A5F13C25D57D8200D2A2A3 /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A5F13D25D57D8200D2A2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24A5F14025D57D8200D2A2A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24A5F14225D57D8200D2A2A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = "file.storyboard"; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24A5F14425D57D8200D2A2A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = "file.storyboard"; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24A5F14725D57D8200D2A2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24A5F14825D57D8200D2A2A3 /* Runner.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xcscheme; name = Runner.xcscheme; path = Runner.xcscheme; sourceTree = "<group>"; };
+		24A5F14925D57D8200D2A2A3 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = Flutter/Flutter.framework; sourceTree = "<group>"; };
+		24A5F14A25D57D8200D2A2A3 /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24A5F13925D57D8200D2A2A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A5F14B25D57D8200D2A2A3 /* Runner_Frameworks */,
+				24A5F14C25D57D8200D2A2A3 /* Runner_Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24A5F13625D57D8200D2A2A3 = {
+			isa = PBXGroup;
+			children = (
+				24A5F14625D57D8200D2A2A3 /* Runner */,
+				24A5F13B25D57D8200D2A2A3 /* Products */,
+				24A5F14D25D57D8200D2A2A3 /* Flutter */,
+			);
+			sourceTree = "<group>";
+		};
+		24A5F13B25D57D8200D2A2A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24A5F13C25D57D8200D2A2A3 /* Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24A5F14625D57D8200D2A2A3 /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				24A5F13D25D57D8200D2A2A3 /* AppDelegate.swift */,
+				24A5F14025D57D8200D2A2A3 /* Assets.xcassets */,
+				24A5F14125D57D8200D2A2A3 /* Base.lproj */,
+				24A5F14725D57D8200D2A2A3 /* Info.plist */,
+				24A5F14825D57D8200D2A2A3 /* Runner.xcscheme */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		24A5F14125D57D8200D2A2A3 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				24A5F14225D57D8200D2A2A3 /* LaunchScreen.storyboard */,
+				24A5F14425D57D8200D2A2A3 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+        24A5F14D25D57D8200D2A2A3 /* Flutter */ = {
+            isa = PBXGroup;
+            children = (
+                24A5F14925D57D8200D2A2A3 /* Flutter.framework */,
+                24A5F14A25D57D8200D2A2A3 /* App.framework */,
+            );
+            name = Flutter;
+            path = Flutter;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24A5F13A25D57D8200D2A2A3 /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24A5F15025D57D8200D2A2A3 /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				24A5F13725D57D8200D2A2A3 /* Headers */,
+				24A5F13825D57D8200D2A2A3 /* Sources */,
+				24A5F13925D57D8200D2A2A3 /* Frameworks */,
+				24A5F14F25D57D8200D2A2A3 /* Resources */,
+				24A5F14E25D57D8200D2A2A3 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 24A5F13C25D57D8200D2A2A3 /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24A5F13525D57D8200D2A2A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "com.example";
+				TargetAttributes = {
+					24A5F13A25D57D8200D2A2A3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 24A5F15325D57D8200D2A2A3 /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24A5F13625D57D8200D2A2A3;
+			productRefGroup = 24A5F13B25D57D8200D2A2A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24A5F13A25D57D8200D2A2A3 /* Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24A5F14F25D57D8200D2A2A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A5F14025D57D8200D2A2A3 /* Assets.xcassets */,
+				24A5F14225D57D8200D2A2A3 /* LaunchScreen.storyboard */,
+				24A5F14425D57D8200D2A2A3 /* Main.storyboard */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24A5F13825D57D8200D2A2A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A5F13E25D57D8200D2A2A3 /* Runner_Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24A5F14E25D57D8200D2A2A3 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			name = "Run Script";
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		24A5F15125D57D8200D2A2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = ""; // You might need to set this
+				ENABLE_BITCODE = NO;
+				FLUTTER_BUILD_MODE = debug;
+				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0; // Or your desired target
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = "$(FLUTTER_BUILD_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.quickTaskFlutter"; // CHANGE THIS
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24A5F15225D57D8200D2A2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = ""; // You might need to set this
+				ENABLE_BITCODE = NO;
+				FLUTTER_BUILD_MODE = release;
+				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0; // Or your desired target
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = "$(FLUTTER_BUILD_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.quickTaskFlutter"; // CHANGE THIS
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24A5F15425D57D8200D2A2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_TESTABILITY = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+			};
+			name = Debug;
+		};
+		24A5F15525D57D8200D2A2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24A5F15025D57D8200D2A2A3 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A5F15125D57D8200D2A2A3 /* Debug */,
+				24A5F15225D57D8200D2A2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24A5F15325D57D8200D2A2A3 /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A5F15425D57D8200D2A2A3 /* Debug */,
+				24A5F15525D57D8200D2A2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24A5F13525D57D8200D2A2A3 /* Project object */;
+}

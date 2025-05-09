@@ -1,0 +1,147 @@
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner.xcodeproj/project.xcworkspace/
+**/ios/Runner.xcodeproj/xcshareddata/
+**/ios/Runner.xcworkspace/
+**/ios/ServiceDefinitions.json
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+/ios/Pods/
+/ios/.symlinks/
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_assets/
+/ios/Flutter/app.flx
+/ios/ServiceDefinitions.json
+/ios/Flutter/
+/linux/flutter/generated_plugin_registrant.h
+/linux/flutter/generated_plugins.cmake
+/macos/Flutter/GeneratedPluginRegistrant.swift
+/macos/Flutter/ephemeral
+/macos/Flutter/ephemeral.podspec
+/web/flutter_bootstrap.js
+/web/assets
+/windows/flutter/generated_plugin_registrant.h
+/windows/flutter/generated_plugins.cmake
+/windows/flutter/ephemeral
+
+# Android related
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/key.properties
+**/android/app/src/main/java/io/flutter/plugins/
+.gradle/
+# Ignore Build files
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+android/app/build/
+android/build/
+android/app/build/outputs/apk/debug/app-debug.apk
+android/app/build/outputs/apk/app-debug.apk
+android/app/build/outputs/apk/release/app-release.apk
+android/app/build/outputs/apk/app-release-unsigned.apk
+android/app/build/outputs/bundle/release/app-release.aab
+
+# Crashlytics (Fabric)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Dependencies (from .flutter-plugins)
+# You should not edit these files manually.
+# Any changes will be overwritten by the next `flutter packages get`.
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Flutter Desktop (linux)
+linux/flutter/generated_plugin_registrant.h
+linux/flutter/generated_plugins.cmake
+
+# Flutter Desktop (macos)
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Flutter/ephemeral
+macos/Flutter/ephemeral.podspec
+
+# Flutter Desktop (windows)
+windows/flutter/generated_plugin_registrant.h
+windows/flutter/generated_plugins.cmake
+windows/flutter/ephemeral
+
+# Exceptions to above rules.
+!/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+!/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+!/ios/Runner/Info.plist
+!/ios/Runner/Assets.xcassets/**
+!/ios/Runner/Base.lproj/LaunchScreen.storyboard
+!/ios/Runner/Base.lproj/Main.storyboard
+!/android/app/src/main/AndroidManifest.xml
+!/android/app/src/main/res/**
+!/android/app/build.gradle
+!/android/build.gradle
+!/android/settings.gradle
+!/android/gradle/wrapper/gradle-wrapper.properties
+!/linux/CMakeLists.txt
+!/linux/main.cc
+!/linux/my_application.h
+!/linux/my_application.cc
+!/macos/Podfile
+!/macos/Runner/Assets.xcassets/**
+!/macos/Runner/Base.lproj/MainMenu.xib
+!/macos/Runner/Configs/AppInfo.xcconfig
+!/macos/Runner/Configs/Debug.xcconfig
+!/macos/Runner/Configs/Release.xcconfig
+!/macos/Runner/Configs/Warnings.xcconfig
+!/macos/Runner/DebugProfile.entitlements
+!/macos/Runner/Info.plist
+!/macos/Runner/MainFlutterWindow.swift
+!/macos/Runner/Release.entitlements
+!/macos/Runner.xcodeproj/project.pbxproj
+!/web/index.html
+!/web/favicon.png
+!/web/icons/**
+!/web/manifest.json
+!/windows/runner/main.cpp
+!/windows/runner/utils.h
+!/windows/runner/utils.cpp
+!/windows/runner/flutter_window.h
+!/windows/runner/flutter_window.cpp
+!/windows/runner/CMakeLists.txt
+!/windows/runner/resource.rc
+!/windows/CMakeLists.txt

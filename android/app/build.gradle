@@ -45,7 +45,7 @@ android {
         applicationId "com.example.quick_task_flutter" // CHANGE THIS TO YOUR APP'S PACKAGE NAME
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion 21 // Common Flutter default, adjust if needed
+        minSdkVersion 24 // Common Flutter default, adjust if needed
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

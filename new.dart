@@ -54,8 +54,10 @@ class _TaskListScreenState extends ConsumerState<TaskListScreen> {
           ad.dispose();
         },
       ),
-    )..load();
+    )
+      ..load();
   }
+
   // --- End AdMob Banner Ad Logic ---
 
   @override
@@ -100,7 +102,8 @@ class _TaskListScreenState extends ConsumerState<TaskListScreen> {
     } finally {
       if (mounted) {
         setState(() {
-          _isPrioritizing = false;});
+          _isPrioritizing = false;
+        });
       }
     }
   }
@@ -135,7 +138,8 @@ class _TaskListScreenState extends ConsumerState<TaskListScreen> {
                 ? const SizedBox(
               width: 20,
               height: 20,
-              child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+              child: CircularProgressIndicator(
+                  strokeWidth: 2, color: Colors.white),
             )
                 : const Icon(Icons.auto_awesome_outlined),
             onPressed: _isPrioritizing ? null : _prioritizeTasks,

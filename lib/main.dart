@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart'; // <<<--- 1. IMPORT ADMOB
 import 'package:quick_task_flutter/screens/task_list_screen.dart';
+import 'package:quick_task_flutter/statistic/statistics_screen.dart';
 
 // void main() { // main.dart  // <<<--- ORIGINAL
 //   runApp(
@@ -14,21 +15,27 @@ import 'package:quick_task_flutter/screens/task_list_screen.dart';
 // MODIFIED main function
 void main() async { // <<<--- 2. MAKE main ASYNC
   // Ensure Flutter bindings are initialized (needed for plugins like AdMob and other async operations before runApp)
-  WidgetsFlutterBinding.ensureInitialized(); // <<<--- 3. ENSURE BINDINGS
+  WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize AdMob
-  await MobileAds.instance.initialize(); // <<<--- 4. INITIALIZE ADMOB (and await it)
+  // Initialize Google Mobile Ads SDK (wait until initialization completes)
+  final InitializationStatus initStatus = await MobileAds.instance.initialize();
 
+  // Once initialization is complete, run the main app wrapped in ProviderScope for Riverpod
   runApp(
-    const ProviderScope( // Your Riverpod setup
+    const ProviderScope(
       child: MyApp(),
     ),
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -40,15 +47,15 @@ class MyApp extends StatelessWidget {
             seedColor: Colors.teal,
             brightness: Brightness.light,
           ),
-          scaffoldBackgroundColor: Colors.grey[100],
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.teal[600],
-            foregroundColor: Colors.white,
+          scaffoldBackgroundColor: const Color(0xFFF7F9FA), // A subtle background
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black87,
             elevation: 4.0,
           ),
           floatingActionButtonTheme: FloatingActionButtonThemeData(
             backgroundColor: Colors.teal[400],
-            foregroundColor:Colors.white,
+            foregroundColor: Colors.white,
           ),
           cardTheme: CardThemeData(
             elevation: 2.0,
@@ -57,116 +64,13 @@ class MyApp extends StatelessWidget {
             ),
             margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
           ),
-          inputDecorationTheme: InputDecorationTheme(
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8.0),
-              borderSide: BorderSide.none,
-            ),
-            filled: true,
-            fillColor: Colors.white,
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-          ),
-          buttonTheme: ButtonThemeData(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8.0),
-            ),
-            buttonColor: Colors.teal[400],
-            textTheme: ButtonTextTheme.primary,
-          ),
-          elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.teal[400],
-              foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              textStyle: const TextStyle(fontSize: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-            ),
-          ),
-          textButtonTheme: TextButtonThemeData(
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.teal[600],
-            ),
-          ),
-          checkboxTheme: CheckboxThemeData(
-            fillColor: MaterialStateProperty.resolveWith((states) {
-              if (states.contains(MaterialState.selected)) {
-                return Colors.teal;
-              }
-              return null;
-            }),
-            checkColor: MaterialStateProperty.all(Colors.white),
-          )
-      ),
-      darkTheme: ThemeData(
-          primarySwatch: Colors.teal,
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.teal,
-            brightness: Brightness.dark,
-          ),
-          scaffoldBackgroundColor: Colors.grey[850],
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.teal[700],
-            foregroundColor: Colors.white,
-            elevation: 4.0,
-          ),
-          floatingActionButtonTheme: FloatingActionButtonThemeData(
-            backgroundColor: Colors.teal[500],
-            foregroundColor: Colors.white,
-          ),
-          cardTheme: CardThemeData(
-            elevation: 2.0,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12.0),
-            ),
-            color: Colors.grey[800],
-            margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
-          ),
-          inputDecorationTheme: InputDecorationTheme(
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8.0),
-              borderSide: BorderSide.none,
-            ),
-            filled: true,
-            fillColor: Colors.grey[700],
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-          ),
-          buttonTheme: ButtonThemeData(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8.0),
-            ),
-            buttonColor: Colors.teal[500],
-            textTheme: ButtonTextTheme.primary,
-          ),
-          elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.teal[500],
-              foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              textStyle: const TextStyle(fontSize: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-            ),
-          ),
-          textButtonTheme: TextButtonThemeData(
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.teal[300],
-            ),
-          ),
-          checkboxTheme: CheckboxThemeData(
-            fillColor: MaterialStateProperty.resolveWith((states) {
-              if (states.contains(MaterialState.selected)) {
-                return Colors.teal[400];
-              }
-              return null;
-            }),
-            checkColor: MaterialStateProperty.all(Colors.white),
-          )
-      ),
+          inputDecorationTheme: const InputDecorationTheme(
+            border: OutlineInputBorder(),
+          )),
       themeMode: ThemeMode.system, // Automatically switch theme based on system settings
+      routes: {
+        '/statistics': (context) => const StatisticsScreen(),
+      },
       home: const TaskListScreen(), // This will be your main screen
     );
   }

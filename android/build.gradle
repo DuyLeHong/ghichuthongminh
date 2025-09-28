@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.0' // Or a version compatible with your Android Studio / Flutter
+        classpath 'com.android.tools.build:gradle:8.13.0' // Or a version compatible with your Android Studio / Flutter
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }

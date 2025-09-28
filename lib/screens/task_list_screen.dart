@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart'; // <<< 1. IMPORT ADMOB
@@ -7,6 +9,7 @@ import 'package:quick_task_flutter/providers/task_provider.dart';
 import 'package:quick_task_flutter/services/ai_service.dart';
 import 'package:quick_task_flutter/widgets/task_list_item.dart';
 import 'package:quick_task_flutter/widgets/create_task_dialog.dart';
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
 
 class TaskListScreen extends ConsumerStatefulWidget {
   const TaskListScreen({super.key});
@@ -32,7 +35,22 @@ class _TaskListScreenState extends ConsumerState<TaskListScreen> {
   void initState() {
     super.initState();
     _loadBannerAd(); // <<< 3. LOAD BANNER AD ONINIT
+
   }
+
+  //StreamSubscription<InternetStatus>? _subscription;
+
+  // void startListeningForConnectivityChanges() {
+  //   _subscription = InternetConnection().onStatusChange.listen(
+  //         (InternetStatus status) {
+  //       if (status == InternetStatus.connected) {
+  //         print('Internet is now connected.');
+  //       } else {
+  //         print('Internet is now disconnected.');
+  //       }
+  //     },
+  //   );
+  // }
 
   // --- AdMob Banner Ad Logic ---
   void _loadBannerAd() {
@@ -128,7 +146,7 @@ class _TaskListScreenState extends ConsumerState<TaskListScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('QuickTask'),
+        title: const Text('Notes App Flutter 2025'),
         actions: [
           IconButton(
             icon: _isPrioritizing

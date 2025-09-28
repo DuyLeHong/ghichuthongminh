@@ -7,6 +7,7 @@ import 'package:quick_task_flutter/widgets/create_task_dialog.dart'; // To opent
 
 class TaskListItem extends ConsumerWidget {
   final Task task;
+  //final Task task2; // Flutter
 
   const TaskListItem({super.key, required this.task});
 
